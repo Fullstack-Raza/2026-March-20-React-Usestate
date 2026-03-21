@@ -20,7 +20,7 @@ const App = () => {
       {user2.gen == "male" ? <Men /> : <Women />}
       <button
       onClick={abd}
-      className="active:scale-95 bg-emerald-600 text-white px-6 py-3 rounded ml-2 font-bold" >Download</button>
+      className="active:scale-95 bg-emerald-600 text-white px-6 py-3 rounded ml-2 font-bold" >click to Download</button>
     </div>
   );
 };
