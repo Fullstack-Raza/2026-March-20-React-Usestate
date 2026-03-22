@@ -16,6 +16,7 @@ const App = () => {
   };
   return (
     <div>
+      <Nav color="#111" title="Raza" links={["Home" , "About" , ]}/>
       {user1.gen == "male" ? <Men /> : <Women />}
       {user2.gen == "male" ? <Men /> : <Women />}
       <button
