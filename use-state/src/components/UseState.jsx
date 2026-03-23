@@ -11,8 +11,17 @@ const UseState = () => {
   const changeQueen = () => {
     setQueen("Fatima");
   };
+  let [marks, setmarks] = useState([89, 23, 45, 56, 7]);
 
-  const marks = [89, 23, 45, 56, 7];
+  function graceadded() {
+    let nwemarks = marks.map(function (elem) {
+      if (elem < 50) {
+        return elem + 5;
+      } else return elem;
+    });
+    setmarks(nwemarks);
+  }
+
   return (
     <div>
       <h1 className="text-6xl font-medium font-serif">useState Demo</h1>
@@ -33,7 +42,9 @@ const UseState = () => {
       </button>
 
       <div>
-        <h1 className="text-center text-green-500 text-7xl font-bold">Grace(+5)</h1>
+        <h1 className="text-center text-green-500 text-7xl font-bold">
+          Grace(+5)
+        </h1>
         {marks.map(function (elem, inx) {
           if (elem > 50) {
             return (
@@ -44,10 +55,16 @@ const UseState = () => {
           } else
             return (
               <h1 className="text-red-700 text-2xl">
-                student {inx + 1} = {elem}
+                student {inx + 1} = {elem} ({elem>15 ?`Paas`:`Fail`})
               </h1>
             );
         })}
+        <button
+          onClick={graceadded}
+          className="text-lg p-4 border-0 bg-amber-300 ml-50 "
+        >
+          grace
+        </button>
       </div>
     </div>
   );
