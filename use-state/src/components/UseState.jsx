@@ -46,7 +46,7 @@ const UseState = () => {
           Grace(+5)
         </h1>
         {marks.map(function (elem, inx) {
-          if (elem > 50) {
+          if (elem > 49) {
             return (
               <h1 className="text-blue-700 text-2xl">
                 student {inx + 1} = {elem}

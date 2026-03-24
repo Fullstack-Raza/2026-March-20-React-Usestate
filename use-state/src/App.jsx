@@ -4,6 +4,7 @@ import React from "react";
 // import Women from "./components/women.jsx";
 // import Bubble from "./components/Bubble.jsx";
 import Usestate from "./components/UseState"
+import UseStateP from "./components/UseStateP";
 const App = () => {
   // function abd (){
   //   console.log("Clicked");
@@ -28,7 +29,7 @@ const App = () => {
     //   <Bubble/>
     // </div>
     <div>
-<Usestate/>
+<UseStateP/>
     </div>
   );
 };
