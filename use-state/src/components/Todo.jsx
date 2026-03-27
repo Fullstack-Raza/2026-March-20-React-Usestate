@@ -10,7 +10,7 @@ const Todo = () => {
   function submithandler(e) {
     e.preventDefault();
     const oldUser = [...allUser];
-    oldUser.push({ UserName, UserRole, Userdiscription, UserURL });
+    oldUser.push({UserName, UserRole, Userdiscription, UserURL });
     console.log(oldUser);
 
     setallUser(oldUser);
@@ -68,14 +68,9 @@ const Todo = () => {
         </button>
       </form>
       <div className="px-2 py-10 flex flex-wrap p-2 ">
-        {allUser.map(function(e){
-          return <div className="px-4 py-10 gap-5 flex flex-wrap">
-            <Card/>
-          </div>
-
-        } 
-      
-        )}
+        {allUser.map(function (elem, idx) {
+          return <Card elem={elem} idx={idx} />;
+        })}
       </div>
     </div>
   );

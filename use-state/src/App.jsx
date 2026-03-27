@@ -6,6 +6,7 @@ import Men from "./components/men.jsx";
 // import Usestate from "./components/UseState"
 // import UseStateP from "./components/UseStateP";
 import Todo from "./components/Todo.jsx";
+import Axios from "./components/axios.jsx";
 const App = () => {
   // function abd (){
   //   console.log("Clicked");
@@ -31,7 +32,8 @@ const App = () => {
     // </div>
     <div>
 {/* <UseStateP/> */}
-<Todo/>
+{/* <Todo/> */}
+<Axios/>
     </div>
   );
 };
