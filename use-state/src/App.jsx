@@ -32,8 +32,8 @@ const App = () => {
     // </div>
     <div>
 {/* <UseStateP/> */}
-<Todo/>
-{/* <Axios/> */}
+{/* <Todo/> */}
+<Axios/>
     </div>
   );
 };
