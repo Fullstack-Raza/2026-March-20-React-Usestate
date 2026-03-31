@@ -7,10 +7,14 @@ import Men from "./components/men.jsx";
 // import UseStateP from "./components/UseStateP";
 import Todo from "./components/Todo.jsx";
 import Axios from "./components/axios.jsx";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About"
+
 const App = () => {
   // function abd (){
   //   console.log("Clicked");
-    
+
   // }
   // const user1 = {
   //   gen: "male",
@@ -31,9 +35,15 @@ const App = () => {
     //   <Bubble/>
     // </div>
     <div>
-{/* <UseStateP/> */}
-{/* <Todo/> */}
-<Axios/>
+      {/*  */}
+      {/* <Todo/> */}
+      {/*  */}
+      {/* <Routing/> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="/axios" element={<Axios />} /> */}
+      </Routes>
     </div>
   );
 };
